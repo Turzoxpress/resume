@@ -129,6 +129,7 @@ const Footer = () => {
             type="button"
             onClick={showEmailFeature}
             // value={!loading ? "Send Message" : "Sending..."}
+            value="Send Message"
             className="p-text button"
           />
         </form>
