@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { AppWrap, MotionWrap } from "../../wrapper";
 
 import "./Work.scss";
+import constants from "../../constants/constants";
 
 const Work = () => {
   const [works, setWorks] = useState([]);
@@ -29,13 +30,15 @@ const Work = () => {
     }, 500);
   };
 
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <>
-      <h2 className="head-text">
-        My Creative <span>Portfolio</span> Section
-      </h2>
+      <h2 className="head-text">My Projects</h2>
 
-      <div className="app__work-filter">
+      {/* <div className="app__work-filter">
         {["UI/UX", "Node JS", "Next JS", "React JS", "All"].map(
           (item, index) => (
             <div
@@ -49,62 +52,61 @@ const Work = () => {
             </div>
           )
         )}
-      </div>
+      </div> */}
 
       <motion.div
         animate={animateCard}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__work-portfolio"
       >
-        {filterWork.map((work, index) => (
-          <a href={work.projectLink} target="_blank" rel="noreferrer">
-            <div className="app__work-item app__flex" key={index}>
-              <div className="app__work-img app__flex">
-                <motion.div
-                  whileHover={{ opacity: [0, 1] }}
-                  transition={{
-                    duration: 0.25,
-                    ease: "easeInOut",
-                    staggerChildren: 0.5,
-                  }}
-                  className="app__work-hover app__flex"
-                >
-                  <a href={work.projectLink} target="_blank" rel="noreferrer">
-                    <motion.div
-                      whileInView={{ scale: [0, 1] }}
-                      whileHover={{ scale: [1, 0.9] }}
-                      transition={{ duration: 0.25 }}
-                      className="app__flex"
-                    >
-                      <AiFillEye />
-                    </motion.div>
-                  </a>
-                  <a href={work.codeLink} target="_blank" rel="noreferrer">
-                    <motion.div
-                      whileInView={{ scale: [0, 1] }}
-                      whileHover={{ scale: [1, 0.9] }}
-                      transition={{ duration: 0.25 }}
-                      className="app__flex"
-                    >
-                      <AiFillGithub />
-                    </motion.div>
-                  </a>
-                </motion.div>
-              </div>
-
-              <div className="app__work-content app__flex">
-                <h4 className="bold-text">{work.title}</h4>
-                <p className="p-text" style={{ marginTop: 10 }}>
-                  {work.description}
+        <div className="col-12">
+          {/* <a href={constants.projects[0].url} target="_blank"> */}
+          <div
+            className="col-xl-6 app__work_item_cursor"
+            onClick={() => openInNewTab(constants.projects[0].url)}
+          >
+            <div className="card">
+              <div className="card-body profile-card pt-4 d-flex flex-column align-items-center">
+                {" "}
+                <img
+                  src={constants.projects[0].imagePath}
+                  alt="Profile"
+                  // className="rounded-circle"
+                />
+                <h3>
+                  <strong>{constants.projects[0].name}</strong>
+                </h3>
+                <br></br>
+                <p className="app__work_description">
+                  {constants.projects[0].description}
                 </p>
-
-                <div className="app__work-tag app__flex">
-                  <p className="p-text">{work.tags[0]}</p>
+                <p className="app__work_platform_p">
+                  Platform : <strong>{constants.projects[0].platform}</strong>
+                </p>
+                <p className="app__work_platform_p">
+                  Technology :{" "}
+                  <strong>{constants.projects[0].technology}</strong>
+                </p>
+                <div className="social-links mt-2">
+                  {" "}
+                  <a href="#" className="twitter">
+                    <i className="bi bi-twitter"></i>
+                  </a>{" "}
+                  <a href="#" className="facebook">
+                    <i className="bi bi-facebook"></i>
+                  </a>{" "}
+                  <a href="#" className="instagram">
+                    <i className="bi bi-instagram"></i>
+                  </a>{" "}
+                  <a href="#" className="linkedin">
+                    <i className="bi bi-linkedin"></i>
+                  </a>
                 </div>
               </div>
             </div>
-          </a>
-        ))}
+          </div>
+          {/* </a> */}
+        </div>
       </motion.div>
     </>
   );
