@@ -180,4 +180,31 @@ module.exports = {
       percent: 90,
     },
   ],
+
+  about_title: "Mahbubur Rahman Turzo",
+  about_description:
+    "Well, I've been working as Software Engineer for more than 5 years. But my development career started when I was in university. However, during this period I explored almost every major technology. That gives me the capabilities to design any large solution in any platform or operating system and handle team members as a team lead.",
+  about_photo: "../assets/profile_large.jpg",
+  about_points: [
+    {
+      pointName: "Fast Worker",
+      description:
+        "I always try to deliver output or projects in a minimum amount of time.",
+    },
+    {
+      pointName: "Fast Learner",
+      description:
+        "I am always thirsty to learn something new or need to learn when necessary.",
+    },
+    {
+      pointName: "Determined about Deadlines",
+      description:
+        "I am able to remain calm and focused no matter how difficult the task. I always try to stay positive and find a way out. I am sure that everything happens for a reason and that any mistake can be fixed.",
+    },
+    {
+      pointName: "Careful about Efficiency",
+      description:
+        "I always test my software as a user after completing any feature or update because I believe if I win the user's mind or make it user-friendly, my software will rock the world!",
+    },
+  ],
 };
