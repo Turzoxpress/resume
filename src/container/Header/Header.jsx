@@ -7,7 +7,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AppWrap, MotionWrap } from "../../wrapper";
-import Resume from "../../assets/resume.pdf";
+import Resume from "../../assets/Mahbubur_Rahman_Turzo_CV.pdf";
 import Swal from "sweetalert2";
 
 import constants from "../../constants/constants";
