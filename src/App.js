@@ -9,7 +9,7 @@ function App() {
       <Skills />
       <Work />
       <About />
-      <More />
+      {/* <More /> */}
 
       <Footer />
     </div>
