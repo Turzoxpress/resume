@@ -1,5 +1,3 @@
-import eventby_project from "../assets/eventby_project";
-
 module.exports = {
   email: "turzoxpress@gmail.com",
   phone: "+880 1834261758",
@@ -216,7 +214,19 @@ module.exports = {
       platform: "Web",
       technology: "NodeJS, NextJS, MongoDB, Google Cloud",
       url: "https://www.eventby.xyz/organizer/login/",
-      imagePath: eventby_project,
+      imagePath:
+        "https://raw.githubusercontent.com/Turzoxpress/resume/master/src/assets/eventby_project.png",
+      description:
+        "EventBy is a social media platform for hosting and organizing in-person and virtual activities, gatherings, and events for people and communities of similar interests, hobbies, and professions.",
+    },
+
+    {
+      name: "Resume",
+      platform: "Web",
+      technology: "NodeJS, ReactJS, MongoDB, Google Cloud",
+      url: "https://www.eventby.xyz/organizer/login/",
+      imagePath:
+        "https://raw.githubusercontent.com/Turzoxpress/resume/master/src/assets/eventby_project.png",
       description:
         "EventBy is a social media platform for hosting and organizing in-person and virtual activities, gatherings, and events for people and communities of similar interests, hobbies, and professions.",
     },
