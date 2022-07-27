@@ -13,10 +13,13 @@ const Work = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
-  useEffect(() => {}, []);
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    setProjects(constants.projects);
+  }, []);
 
   const handleWorkFilter = (item) => {
-    setActiveFilter(item);
     setAnimateCard([{ y: 100, opacity: 0 }]);
 
     setTimeout(() => {
@@ -59,53 +62,54 @@ const Work = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__work-portfolio"
       >
-        <div className="col-12">
-          {/* <a href={constants.projects[0].url} target="_blank"> */}
-          <div
-            className="col-xl-6 app__work_item_cursor"
-            onClick={() => openInNewTab(constants.projects[0].url)}
-          >
-            <div className="card">
-              <div className="card-body profile-card pt-4 d-flex flex-column align-items-center">
-                {" "}
-                <img
-                  src={constants.projects[0].imagePath}
-                  alt="Profile"
-                  // className="rounded-circle"
-                />
-                <h3>
-                  <strong>{constants.projects[0].name}</strong>
+        <div className="row">
+          {projects.map((items) => (
+            <div
+              className="col-12 app__work_item_cursor app__work_project_item_div"
+              onClick={() => openInNewTab(items.url)}
+            >
+              <div className="card">
+                <h3 className="app__work_item_title">
+                  <strong>
+                    <u>{items.name}</u>
+                  </strong>
                 </h3>
-                <br></br>
-                <p className="app__work_description">
-                  {constants.projects[0].description}
-                </p>
-                <p className="app__work_platform_p">
-                  Platform : <strong>{constants.projects[0].platform}</strong>
-                </p>
-                <p className="app__work_platform_p">
-                  Technology :{" "}
-                  <strong>{constants.projects[0].technology}</strong>
-                </p>
-                <div className="social-links mt-2">
+
+                <div className="card-body profile-card pt-4 d-flex flex-column align-items-center">
                   {" "}
-                  <a href="#" className="twitter">
-                    <i className="bi bi-twitter"></i>
-                  </a>{" "}
-                  <a href="#" className="facebook">
-                    <i className="bi bi-facebook"></i>
-                  </a>{" "}
-                  <a href="#" className="instagram">
-                    <i className="bi bi-instagram"></i>
-                  </a>{" "}
-                  <a href="#" className="linkedin">
-                    <i className="bi bi-linkedin"></i>
-                  </a>
+                  <img
+                    src={items.imagePath}
+                    alt="Profile"
+                    className="border-2"
+                    // className="rounded-circle"
+                  />
+                  <br></br>
+                  <p className="app__work_description">{items.description}</p>
+                  <p className="app__work_platform_p">
+                    Platform : <strong>{items.platform}</strong>
+                  </p>
+                  <p className="app__work_platform_p">
+                    Technology : <strong>{items.technology}</strong>
+                  </p>
+                  <div className="social-links mt-2">
+                    {" "}
+                    <a href="#" className="twitter">
+                      <i className="bi bi-twitter"></i>
+                    </a>{" "}
+                    <a href="#" className="facebook">
+                      <i className="bi bi-facebook"></i>
+                    </a>{" "}
+                    <a href="#" className="instagram">
+                      <i className="bi bi-instagram"></i>
+                    </a>{" "}
+                    <a href="#" className="linkedin">
+                      <i className="bi bi-linkedin"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          {/* </a> */}
+          ))}
         </div>
       </motion.div>
     </>

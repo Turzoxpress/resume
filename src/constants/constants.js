@@ -221,14 +221,35 @@ module.exports = {
     },
 
     {
-      name: "Resume",
+      name: "Resume (This Site)",
       platform: "Web",
       technology: "NodeJS, ReactJS, MongoDB, Google Cloud",
-      url: "https://www.eventby.xyz/organizer/login/",
+      url: "https://turzoxpress.github.io/resume/",
       imagePath:
-        "https://raw.githubusercontent.com/Turzoxpress/resume/master/src/assets/eventby_project.png",
+        "https://raw.githubusercontent.com/Turzoxpress/resume/master/src/assets/resume.png",
       description:
-        "EventBy is a social media platform for hosting and organizing in-person and virtual activities, gatherings, and events for people and communities of similar interests, hobbies, and professions.",
+        "Resume website made with ReactJS, Bootsrap(Frontend) and NodeJS,Express,MongoDB(Backend).",
+    },
+    {
+      name: "Learnerscafe LMS",
+      platform: "Web",
+      technology: "NodeJS, ReactJS,Python-Django, MongoDB, Google Cloud",
+      url: "https://learnerscafe.com/",
+      imagePath:
+        "https://raw.githubusercontent.com/Turzoxpress/resume/master/src/assets/learnerscafe.png",
+      description:
+        "Learnerscafe LMS, a SaaS based e-learning management solution. It facilitates distance learning, and improve efficiency of learners. School, College, Universities, public and private organizations can be benefited by Learnerscafe LMS, a fully integrated and robust system",
+    },
+
+    {
+      name: "Task Tracker",
+      platform: "Web",
+      technology: "NodeJS, ReactJS, MongoDB, Google Cloud",
+      url: "https://github.com/Turzoxpress/task-tracker-app-react-frontend",
+      imagePath:
+        "https://raw.githubusercontent.com/Turzoxpress/resume/master/src/assets/task_tracker.PNG",
+      description:
+        "This is a fullstack application with complete frontend and backend.",
     },
   ],
 };
