@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import images from '../../constants/images';
 import './Navbar.scss';
-import Resume from '../../assets/resume.pdf'
+import Resume from '../../assets/Mahbubur_Rahman_Turzo_CV.pdf'
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
