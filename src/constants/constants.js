@@ -1,3 +1,5 @@
+import eventby_project from "../assets/eventby_project";
+
 module.exports = {
   email: "turzoxpress@gmail.com",
   phone: "+880 1834261758",
@@ -205,6 +207,18 @@ module.exports = {
       pointName: "Careful about Efficiency",
       description:
         "I always test my software as a user after completing any feature or update because I believe if I win the user's mind or make it user-friendly, my software will rock the world!",
+    },
+  ],
+
+  projects: [
+    {
+      name: "EventBy",
+      platform: "Web",
+      technology: "NodeJS, NextJS, MongoDB, Google Cloud",
+      url: "https://www.eventby.xyz/organizer/login/",
+      imagePath: eventby_project,
+      description:
+        "EventBy is a social media platform for hosting and organizing in-person and virtual activities, gatherings, and events for people and communities of similar interests, hobbies, and professions.",
     },
   ],
 };
