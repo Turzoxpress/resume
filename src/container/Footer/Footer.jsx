@@ -7,6 +7,10 @@ import emailjs from "emailjs-com";
 
 import "./Footer.scss";
 
+import constants from "../../constants/constants";
+
+import Swal from "sweetalert2";
+
 const Footer = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -43,6 +47,14 @@ const Footer = () => {
       });
   };
 
+  const showEmailFeature = () => {
+    Swal.fire({
+      icon: "warning",
+      title: "Coming soon...",
+      text: "This feature is coming soon.",
+    });
+  };
+
   return (
     <>
       <h2 className="head-text">Take a coffee & chat with me</h2>
@@ -50,14 +62,14 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:hello@micael.com" className="p-text">
-            hansrajsaini8149@gmail.com
+          <a href={"mailto:" + constants.email} className="p-text">
+            {constants.email}
           </a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+1 (123) 456-7890" className="p-text">
-            +91 9398881610
+          <a href={"tel:" + constants.phone} className="p-text">
+            {constants.phone}
           </a>
         </div>
       </div>
@@ -113,8 +125,10 @@ const Footer = () => {
           </div>
           {/* <button type="button" className="p-text" >{!loading ? 'Send Message' : 'Sending...'}</button> */}
           <input
-            type="submit"
-            value={!loading ? "Send Message" : "Sending..."}
+            // type="submit"
+            type="button"
+            onClick={showEmailFeature}
+            // value={!loading ? "Send Message" : "Sending..."}
             className="p-text button"
           />
         </form>
