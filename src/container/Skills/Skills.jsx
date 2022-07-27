@@ -6,69 +6,115 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 
 import "./Skills.scss";
 
-const Skills = () => {
-  const [experiences, setExperiences] = useState([]);
-  const [skills, setSkills] = useState([]);
+import { ProgressBar } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import constants from "../../constants/constants";
 
-  useEffect(() => {}, []);
+const Skills = () => {
+  const [backend, setBackend] = useState([]);
+  const [frontend, setFrontend] = useState([]);
+  const [language, setLanguage] = useState([]);
+  const [devops, setDevops] = useState([]);
+
+  useEffect(() => {
+    setBackend(constants.backendSkills);
+
+    setFrontend(constants.frontendSkills);
+
+    setLanguage(constants.languageSkills);
+
+    setDevops(constants.devOpsSkills);
+  }, []);
 
   return (
     <>
-      <h2 className="head-text">Skills & Experiences</h2>
+      <h2 className="head-text">Skills & Languages</h2>
 
       <div className="app__skills-container">
-        <motion.div className="app__skills-list">
-          {skills.map((skill) => (
-            <motion.div
-              whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5 }}
-              className="app__skills-item app__flex"
-              key={skill.name}
-            >
-              <div
-                className="app__flex"
-                style={{ backgroundColor: skill.bgColor }}
-              >
-               
-              </div>
-              <p className="p-text">{skill.name}</p>
-            </motion.div>
+        <motion.div className="app__skills-list app_skills_title">
+          <h3>Backend</h3>
+          {backend.map((items) => (
+            <div className="progressBar app_skills_progressbarsize">
+              <p>
+                <strong>{items.name}</strong>
+              </p>
+              <ProgressBar now={items.percent} />
+            </div>
           ))}
         </motion.div>
-        <div className="app__skills-exp">
-          {experiences.map((experience) => (
-            <motion.div className="app__skills-exp-item" key={experience.year}>
-              <div className="app__skills-exp-year">
-                <p className="bold-text">{experience.year}</p>
-              </div>
-              <motion.div className="app__skills-exp-works">
-                {experience.works.map((work) => (
-                  <>
-                    <motion.div
-                      whileInView={{ opacity: [0, 1] }}
-                      transition={{ duration: 0.5 }}
-                      className="app__skills-exp-work"
-                      data-tip
-                      data-for={work.name}
-                      key={work.name}
-                    >
-                      <h4 className="bold-text">{work.name}</h4>
-                      <p className="p-text">{work.company}</p>
-                    </motion.div>
-                    <ReactTooltip
-                      id={work.name}
-                      effect="float"
-                      arrowColor="#fff"
-                      className="skills-tooltip"
-                    >
-                      {work.desc}
-                    </ReactTooltip>
-                  </>
-                ))}
-              </motion.div>
-            </motion.div>
+
+        <motion.div className="app__skills-list app_skills_title">
+          <h3>Frontend</h3>
+          {frontend.map((items) => (
+            <div className="progressBar app_skills_progressbarsize">
+              <p>
+                <strong>{items.name}</strong>
+              </p>
+              <ProgressBar now={items.percent} />
+            </div>
           ))}
-        </div>
+        </motion.div>
+      </div>
+
+      {/* <div className="app__skills-container app_skills_container_div">
+        <motion.div className="app__skills-list app_skills_title">
+          <h3>Language</h3>
+          <div className="app__skills_languge_div">
+            {language.map((items) => (
+              <div className="app_skills_progressbarsize">
+                
+                <img src={items.imgPath} className="app__skills_img" />
+                <p className="app__skills_language_p">
+                  <strong>{items.name}</strong>
+                </p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </div> */}
+
+      <h3 className="app__skills_language_p app_skills_container_div">
+        Language
+      </h3>
+      <div className="app__skills-container">
+        <motion.div className="app__skills-list app_skills_title app_skills_language_div_2">
+          <div className="col-lg-12">
+            <div className="card">
+              <div className="card-body">
+                {language.map((items) => (
+                  <div className="app__skills_languge_div">
+                    <img src={items.imgPath} className="app__skills_img" />
+                    <p className="">
+                      <strong>{items.name}</strong>
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+
+      <h3 className="app__skills_language_p app_skills_container_div">
+        DevOps
+      </h3>
+      <div className="app__skills-container app_skills_container_div">
+        <motion.div className="app__skills-list app_skills_title app_skills_language_div_2">
+          <div className="col-lg-12">
+            <div className="card">
+              <div className="card-body">
+                {devops.map((items) => (
+                  <div className="app__skills_languge_div app__skills_img_languge_div2">
+                    <img src={items.imgPath} className="app__skills_img" />
+                    <p className="">
+                      <strong>{items.name}</strong>
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </>
   );
