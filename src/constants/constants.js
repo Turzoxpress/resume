@@ -247,7 +247,7 @@ module.exports = {
       technology: "NodeJS, ReactJS, MongoDB, Google Cloud",
       url: "https://github.com/Turzoxpress/task-tracker-app-react-frontend",
       imagePath:
-        "https://raw.githubusercontent.com/Turzoxpress/resume/master/src/assets/task_tracker.png",
+        "https://raw.githubusercontent.com/Turzoxpress/resume/master/src/assets/task_tracker.PNG",
       description:
         "This is a fullstack application with complete frontend and backend.",
     },
