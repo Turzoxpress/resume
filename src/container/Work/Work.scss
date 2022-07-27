@@ -170,3 +170,17 @@
 .app__work_item_cursor {
   cursor: pointer;
 }
+
+.app__work_project_holder_div {
+  display: flex;
+}
+
+.app__work_project_item_div {
+  margin: 30px;
+}
+
+.app__work_item_title {
+  margin: 30px;
+  text-align: center;
+  color: blue;
+}
