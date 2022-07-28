@@ -1,6 +1,15 @@
-import { About, Footer, Header, More, Skills, Work } from "./container/index";
+import {
+  About,
+  Footer,
+  Header,
+  More,
+  Skills,
+  Work,
+  Experience,
+} from "./container/index";
 import { Navbar } from "./components/index";
 import "./App.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div className="App">
@@ -8,6 +17,7 @@ function App() {
       <Header />
       <Skills />
       <About />
+      <Experience />
       <Work />
 
       {/* <More /> */}

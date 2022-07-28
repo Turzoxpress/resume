@@ -24,6 +24,7 @@
     "react-scripts": "5.0.1",
     "react-tooltip": "^4.2.21",
     "sweetalert2": "^11.4.24",
+    "vertical-timeline-component-react": "^3.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
