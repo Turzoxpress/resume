@@ -7,8 +7,9 @@ function App() {
       <Navbar />
       <Header />
       <Skills />
-      <Work />
       <About />
+      <Work />
+
       {/* <More /> */}
 
       <Footer />

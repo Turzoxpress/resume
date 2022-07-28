@@ -229,6 +229,26 @@ module.exports = {
       description:
         "EventBy is a social media platform for hosting and organizing in-person and virtual activities, gatherings, and events for people and communities of similar interests, hobbies, and professions.",
     },
+    {
+      name: "File Hosting Server",
+      platform: "Web",
+      technology: "NodeJS, MongoDB, Google Cloud",
+      url: "https://github.com/Turzoxpress/NodejsExpressFileUploader",
+      imagePath:
+        "https://github.com/Turzoxpress/NodejsExpressFileUploader/raw/master/screenshots/cloud_upload.gif",
+      description:
+        "Thinking of creating a file hosting server like Dropbox or 4shared or Mediafire? This projects will help you a lot and its built with NodeJS.",
+    },
+    {
+      name: "Rest API server with NodeJS & MongoDB",
+      platform: "Web",
+      technology: "NodeJS, MongoDB, Google Cloud",
+      url: "https://github.com/Turzoxpress/Node_REST_API_Server_Express_MongoDB",
+      imagePath:
+        "https://github.com/Turzoxpress/Node_REST_API_Server_Express_MongoDB/raw/master/screenshots/node.gif",
+      description:
+        "Do you want to create REST API server with Node.js, Express Framwork & MongoDB database? This repo will guide you!",
+    },
 
     {
       name: "Resume (This Site)",
@@ -261,6 +281,7 @@ module.exports = {
       description:
         "This is a fullstack application with complete frontend and backend.",
     },
+
     {
       name: "Inventory App with ReactJS & NodeJS",
       platform: "Web",
@@ -292,6 +313,16 @@ module.exports = {
       description:
         "This smart asset tracker solution will help you to track your official or personal assets easily. Frontend and Backend both included!",
     },
+    {
+      name: "JWT Authentication with NodeJS & MongoDB",
+      platform: "Web",
+      technology: "NodeJS, JWT, MongoDB, Google Cloud",
+      url: "https://github.com/Turzoxpress/rest-api-with-node-express-mongodb-with-jwt-authentication-within-30-minutes",
+      imagePath:
+        "https://github.com/Turzoxpress/PythonDjangoRestAPIwithMongoDB/raw/master/screenshots/database_migration.JPG",
+      description:
+        "REST API with Node.js, Express & MongoDB with JWT authentication within 30 minutes!",
+    },
 
     {
       name: "Smart Attendance with Face Detection",
@@ -299,9 +330,9 @@ module.exports = {
       technology: "Python, Django, ReactJS, MongoDB, Google Cloud",
       url: "https://github.com/Turzoxpress/EmployeeDailyAttendaceByFaceDetectionBackend",
       imagePath:
-        "https://github.com/Turzoxpress/asset-tracker-react-frontend/raw/master/screenshots/a1.PNG",
+        "https://raw.githubusercontent.com/Turzoxpress/resume/master/src/assets/employee_face_detection.png",
       description:
-        "Smart Employee Attendance solution to connect various types of analytical tools easily!",
+        "Smart Employee Attendance solution by face detection to connect various types of analytical tools easily!",
     },
     {
       name: "Data Structure & Algorithms",
@@ -310,6 +341,26 @@ module.exports = {
       url: "https://www.youtube.com/watch?v=uQTzf0UWVrA&list=PLp6lX102mPy45JUhN3z4S75-p9iOkhv22",
       imagePath: "https://img.youtube.com/vi/WK1hedbf9Fw/maxresdefault.jpg",
       description: "Data Structure & Algorithms with Python tutorial series.",
+    },
+    {
+      name: "Python Django REST API backend with MongoDB Boilerplate",
+      platform: "Web",
+      technology: "Python, Django, ReactJS, MongoDB, Google Cloud",
+      url: "https://github.com/Turzoxpress/PythonDjangoRestAPIwithMongoDB",
+      imagePath:
+        "https://github.com/Turzoxpress/PythonDjangoRestAPIwithMongoDB/raw/master/screenshots/database_illustration.gif",
+      description:
+        "This project will help you to connect Python Django REST framework with MongoDB database for a REST API project. Clone this Repo or Boilerplate and start creating REST API instantly!",
+    },
+    {
+      name: "Python Django Boilerplate",
+      platform: "Web",
+      technology: "Python, Django, ReactJS, MongoDB, Google Cloud",
+      url: "https://github.com/Turzoxpress/PythonDjangoInstallation",
+      imagePath:
+        "https://github.com/Turzoxpress/PythonDjangoRestAPIwithMongoDB/raw/master/screenshots/database_migration.JPG",
+      description:
+        "Are you plaining to work with a Python Django project? Just clone this repo and start your work instantly!",
     },
   ],
 };
