@@ -81,7 +81,10 @@ const Work = () => {
           {chunked.map((container, i) => (
             <div className="row" key={i}>
               {container.map((items, i2) => (
-                <div className="col-xl-6">
+                <div
+                  className="col-xl-6 app__work_item_cursor"
+                  onClick={() => openInNewTab(items.url)}
+                >
                   <div className="card m-2">
                     <div className="card-body profile-card pt-4 d-flex flex-column align-items-center">
                       <h3 className="app__work_item_title">

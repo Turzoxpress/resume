@@ -210,6 +210,16 @@ module.exports = {
 
   projects: [
     {
+      name: "Professional Backend Training NodeJS",
+      platform: "Web",
+      technology: "NodeJS,Mongoose, MongoDB, Multer,JWT, bCrypt, Google Cloud",
+      url: "https://www.youtube.com/watch?v=9gMoukN81Ow&list=PLp6lX102mPy4A7ajKYu0oxMr9zpdVepvy",
+      imagePath:
+        "https://github.com/Turzoxpress/NodeJS-Professional-Training-MongoDB/raw/master/screenshots/cover.jpg",
+      description:
+        "Professional Backend Development Training instructed by me. I made this video tutorial series based on NodeJS to empower our future programmers.",
+    },
+    {
       name: "EventBy",
       platform: "Web",
       technology: "NodeJS, NextJS, MongoDB, Google Cloud",
@@ -252,14 +262,54 @@ module.exports = {
         "This is a fullstack application with complete frontend and backend.",
     },
     {
-      name: "Task Tracker",
+      name: "Inventory App with ReactJS & NodeJS",
       platform: "Web",
       technology: "NodeJS, ReactJS, MongoDB, Google Cloud",
-      url: "https://github.com/Turzoxpress/task-tracker-app-react-frontend",
+      url: "https://github.com/Turzoxpress/inventory-app-with-react-js",
       imagePath:
-        "https://raw.githubusercontent.com/Turzoxpress/resume/master/src/assets/task_tracker.PNG",
+        "https://user-images.githubusercontent.com/50833200/64965521-5c4aac80-d8c7-11e9-9732-9f156ffd7462.png",
       description:
-        "This is a fullstack application with complete frontend and backend.",
+        "Inventory app is an application about managing a products, Here we can create, edit, delete and search a product.",
+    },
+    {
+      name: "Smart Invoice",
+      platform: "Web",
+      technology: "NodeJS, ReactJS, MongoDB, Google Cloud",
+      url: "https://github.com/Turzoxpress/invoice-generator-reactjs",
+      imagePath:
+        "https://raw.githubusercontent.com/tuanpham-dev/react-invoice-generator/master/screenshot.png",
+      description:
+        "Invoice generator based on popular React Open Source library!",
+    },
+
+    {
+      name: "Asset Tracker",
+      platform: "Web",
+      technology: "NodeJS, ReactJS, MongoDB, Google Cloud",
+      url: "https://github.com/Turzoxpress/asset-tracker-react-frontend",
+      imagePath:
+        "https://github.com/Turzoxpress/asset-tracker-react-frontend/raw/master/screenshots/a1.PNG",
+      description:
+        "This smart asset tracker solution will help you to track your official or personal assets easily. Frontend and Backend both included!",
+    },
+
+    {
+      name: "Smart Attendance with Face Detection",
+      platform: "Web, Mobile",
+      technology: "Python, Django, ReactJS, MongoDB, Google Cloud",
+      url: "https://github.com/Turzoxpress/EmployeeDailyAttendaceByFaceDetectionBackend",
+      imagePath:
+        "https://github.com/Turzoxpress/asset-tracker-react-frontend/raw/master/screenshots/a1.PNG",
+      description:
+        "Smart Employee Attendance solution to connect various types of analytical tools easily!",
+    },
+    {
+      name: "Data Structure & Algorithms",
+      platform: "Windows, Linux, iOS",
+      technology: "Python",
+      url: "https://www.youtube.com/watch?v=uQTzf0UWVrA&list=PLp6lX102mPy45JUhN3z4S75-p9iOkhv22",
+      imagePath: "https://img.youtube.com/vi/WK1hedbf9Fw/maxresdefault.jpg",
+      description: "Data Structure & Algorithms with Python tutorial series.",
     },
   ],
 };
