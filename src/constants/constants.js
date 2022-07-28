@@ -393,6 +393,36 @@ module.exports = {
         "A Roster Management to fulfill all your needs to manage Mass number of workers. Add shifts, transfer between shifts and also identify if anyone is missing shifts very easily.",
     },
     {
+      name: "My Tutor - আমার শিক্ষক",
+      platform: "Android, Mobile",
+      technology: "Java, Android Studio",
+      url: "https://play.google.com/store/apps/details?id=com.unknownwarriors.mytutor",
+      imagePath:
+        "https://play-lh.googleusercontent.com/vi8PxRIjh2hvN7TnjiKq-GxpxEVN33pY119h3Ea-nETz-5u2ScPDzIlerxDavUVhiQ=w2560-h1440",
+      description:
+        "আপনি কি আপনার সন্তানের জন্য ভাল টিউটর খুঁজছেন? অথবা, আপনি কি ভাল টিউশনি খুঁজছেন? তাহলে আপনার জন্যই চলে এলে, My Tutor অ্যাপ!",
+    },
+    {
+      name: "Password Saver & Manager",
+      platform: "Android, Mobile",
+      technology: "Java, Android Studio",
+      url: "https://play.google.com/store/apps/details?id=com.unknownwarriors.mypasswordmanager",
+      imagePath:
+        "https://play-lh.googleusercontent.com/tVPwTVf9cntvVV76JUuDXXNhLBUTv8QOYllMihpv1JIxXyYN00cSmZL23f9w3ev8zg=w2560-h1440",
+      description:
+        "It's very hard to remember all of our passwords at the same time! We are human! not Robots!! Remembering a password is hard! but, My Password Saver & Manager will make this easy for you!",
+    },
+    {
+      name: "Sound Effects Soundboard",
+      platform: "Android, Mobile",
+      technology: "Java, Android Studio",
+      url: "https://play.google.com/store/apps/details?id=com.tur.soundeffectslibraryfree",
+      imagePath:
+        "https://play-lh.googleusercontent.com/8AyWg9Xb9_3L9rzxy2AS7A2sqo94zZU7ky5AoqWTsZigddu2rT9sV86JZZJ1RUrFNEA=w2560-h1440",
+      description:
+        "Looking for a whoosh, bomb blasting, cartoon, horror or ghost sound effect for your video project? Discover our extensive catalog of royalty-free sound effects. Bring your content to life with amazing sound effects.",
+    },
+    {
       name: "SMS Server",
       platform: "Android, Mobile",
       technology: "Java, Android Studio",
@@ -410,7 +440,7 @@ module.exports = {
       imagePath:
         "https://play-lh.googleusercontent.com/3oHja1vPzOOJVTz7NxyFOQiJ1iMxlc1vTZWLDqCJZmZEDJ6u-VoEE05T9CDNVWeMtoI=w1024-h768-rw",
       description:
-        "AnyTracker - Realtime Live GPS Tracker content rating is Everyone. This app is listed in Maps & Navigation category of app store . You could visit Lone Tiger's website to know more about the company/developer who developed this. AnyTracker - Realtime Live GPS Tracker can be downloaded and installed on android devices supporting 16 api and above.. Download the app using your favorite browser and click on install to install the app. Please note that we provide original and pure apk file and provide faster download speed than AnyTracker - Realtime Live GPS Tracker apk mirrors. Versions of this app apk available with us: 1.3 , 1.0. You could also download apk of AnyTracker - Realtime Live GPS Tracker and run it using popular android emulators.",
+        "AnyTracker - Realtime Live GPS Tracker content rating is Everyone. This app is listed in Maps & Navigation category of app store.",
     },
     {
       name: "Bulk SMS Sender",
