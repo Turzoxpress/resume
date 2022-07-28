@@ -98,7 +98,7 @@ const Work = () => {
                         <img
                           src={items.imagePath}
                           alt="Profile"
-                          className="border-2"
+                          className="border-2 app__work_image_responsive"
                           // className="rounded-circle"
                         />
                         <br></br>
