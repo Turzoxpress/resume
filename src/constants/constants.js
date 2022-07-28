@@ -319,7 +319,7 @@ module.exports = {
       technology: "NodeJS, JWT, MongoDB, Google Cloud",
       url: "https://github.com/Turzoxpress/rest-api-with-node-express-mongodb-with-jwt-authentication-within-30-minutes",
       imagePath:
-        "https://github.com/Turzoxpress/PythonDjangoRestAPIwithMongoDB/raw/master/screenshots/database_migration.JPG",
+        "https://raw.githubusercontent.com/Turzoxpress/resume/master/src/assets/jwt_flow.png",
       description:
         "REST API with Node.js, Express & MongoDB with JWT authentication within 30 minutes!",
     },
@@ -361,6 +361,36 @@ module.exports = {
         "https://github.com/Turzoxpress/PythonDjangoRestAPIwithMongoDB/raw/master/screenshots/database_migration.JPG",
       description:
         "Are you plaining to work with a Python Django project? Just clone this repo and start your work instantly!",
+    },
+    {
+      name: "MVVM Practical Example with SwiftUI",
+      platform: "iOS",
+      technology: "Swift, SwifUI, XCode",
+      url: "https://github.com/Turzoxpress/MVVM_Example_SwiftUI",
+      imagePath:
+        "https://camo.githubusercontent.com/7cb375079db3956746f49107809d294b83c6e7ad62739a80323ab8ca9eb7118d/68747470733a2f2f692e696d6775722e636f6d2f766d346a704b572e706e67",
+      description:
+        "I have implemented a simple real-life example of most popular design patttern, MVVM. I kept the source code simple, just to show you the MVVM design pattern! This app will call a simple GET api from The Movie Database - TMDb and shows the popular moivies posters and names in a gridview.",
+    },
+    {
+      name: "Prottay HRMS iOS",
+      platform: "iOS, Mobile",
+      technology: "Swift, SwifUI, XCode",
+      url: "https://apps.apple.com/app/id1627446374",
+      imagePath:
+        "https://camo.githubusercontent.com/7cb375079db3956746f49107809d294b83c6e7ad62739a80323ab8ca9eb7118d/68747470733a2f2f692e696d6775722e636f6d2f766d346a704b572e706e67",
+      description:
+        "A Roster Management to fulfill all your needs to manage Mass number of workers. Add shifts, transfer between shifts and also identify if anyone is missing shifts very easily.",
+    },
+    {
+      name: "Prottay HRMS Android",
+      platform: "Android,Mobile",
+      technology: "Java, Android Studio",
+      url: "https://play.google.com/store/apps/details?id=com.bgl.bglattendancenew&hl=en&gl=US",
+      imagePath:
+        "https://camo.githubusercontent.com/7cb375079db3956746f49107809d294b83c6e7ad62739a80323ab8ca9eb7118d/68747470733a2f2f692e696d6775722e636f6d2f766d346a704b572e706e67",
+      description:
+        "A Roster Management to fulfill all your needs to manage Mass number of workers. Add shifts, transfer between shifts and also identify if anyone is missing shifts very easily.",
     },
   ],
 };
