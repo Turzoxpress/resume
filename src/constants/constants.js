@@ -378,19 +378,49 @@ module.exports = {
       technology: "Swift, SwifUI, XCode",
       url: "https://apps.apple.com/app/id1627446374",
       imagePath:
-        "https://camo.githubusercontent.com/7cb375079db3956746f49107809d294b83c6e7ad62739a80323ab8ca9eb7118d/68747470733a2f2f692e696d6775722e636f6d2f766d346a704b572e706e67",
+        "https://raw.githubusercontent.com/Turzoxpress/resume/master/src/assets/prottay_ios.png",
       description:
         "A Roster Management to fulfill all your needs to manage Mass number of workers. Add shifts, transfer between shifts and also identify if anyone is missing shifts very easily.",
     },
     {
       name: "Prottay HRMS Android",
-      platform: "Android,Mobile",
+      platform: "Android, Mobile",
       technology: "Java, Android Studio",
       url: "https://play.google.com/store/apps/details?id=com.bgl.bglattendancenew&hl=en&gl=US",
       imagePath:
-        "https://camo.githubusercontent.com/7cb375079db3956746f49107809d294b83c6e7ad62739a80323ab8ca9eb7118d/68747470733a2f2f692e696d6775722e636f6d2f766d346a704b572e706e67",
+        "https://raw.githubusercontent.com/Turzoxpress/resume/master/src/assets/prottay_android.png",
       description:
         "A Roster Management to fulfill all your needs to manage Mass number of workers. Add shifts, transfer between shifts and also identify if anyone is missing shifts very easily.",
+    },
+    {
+      name: "SMS Server",
+      platform: "Android, Mobile",
+      technology: "Java, Android Studio",
+      url: "https://github.com/Turzoxpress/SMS_Server_Android",
+      imagePath:
+        "https://raw.githubusercontent.com/Turzoxpress/resume/master/src/assets/mobile_sms_server.png",
+      description:
+        "Turn your Android phone into a SMS Gateway. Send and receive messages programmatically through your phone using API service.",
+    },
+    {
+      name: "AnyTracker - Realtime Live GPS Tracker App",
+      platform: "Android, Mobile",
+      technology: "Java, Android Studio",
+      url: "https://apkcombo.com/anytracker-realtime-live-gps-tracker/com.lonetiger.onetracker/",
+      imagePath:
+        "https://play-lh.googleusercontent.com/3oHja1vPzOOJVTz7NxyFOQiJ1iMxlc1vTZWLDqCJZmZEDJ6u-VoEE05T9CDNVWeMtoI=w1024-h768-rw",
+      description:
+        "AnyTracker - Realtime Live GPS Tracker content rating is Everyone. This app is listed in Maps & Navigation category of app store . You could visit Lone Tiger's website to know more about the company/developer who developed this. AnyTracker - Realtime Live GPS Tracker can be downloaded and installed on android devices supporting 16 api and above.. Download the app using your favorite browser and click on install to install the app. Please note that we provide original and pure apk file and provide faster download speed than AnyTracker - Realtime Live GPS Tracker apk mirrors. Versions of this app apk available with us: 1.3 , 1.0. You could also download apk of AnyTracker - Realtime Live GPS Tracker and run it using popular android emulators.",
+    },
+    {
+      name: "Bulk SMS Sender",
+      platform: "Android, Mobile",
+      technology: "Java, Android Studio",
+      url: "https://github.com/Turzoxpress/BulkSMSSender",
+      imagePath:
+        "https://raw.githubusercontent.com/Turzoxpress/resume/master/src/assets/bulk_sms.png",
+      description:
+        "This app will help you to send multiple/Bulk SMS. Just save your phone numbers in a text file like : +88018342***",
     },
   ],
 };
