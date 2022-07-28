@@ -15,8 +15,23 @@ const Work = () => {
 
   const [projects, setProjects] = useState([]);
 
+  function chunk_array(arr, chunkSize = 2) {
+    const result = [];
+    for (let i = 0; i < arr.length; i += chunkSize) {
+      result.push(arr.slice(i, i + chunkSize));
+    }
+    return result;
+  }
+
+  const chunked = chunk_array(constants.projects);
+  console.log(chunked);
+
   useEffect(() => {
     setProjects(constants.projects);
+
+    //--------
+
+    //---------------
   }, []);
 
   const handleWorkFilter = (item) => {
@@ -62,52 +77,42 @@ const Work = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__work-portfolio"
       >
-        <div className="row">
-          {projects.map((items) => (
-            <div
-              className="col-12 app__work_item_cursor app__work_project_item_div"
-              onClick={() => openInNewTab(items.url)}
-            >
-              <div className="card">
-                <h3 className="app__work_item_title">
-                  <strong>
-                    <u>{items.name}</u>
-                  </strong>
-                </h3>
+        <div className="container">
+          {chunked.map((container, i) => (
+            <div className="row" key={i}>
+              {container.map((items, i2) => (
+                <div className="col-xl-6">
+                  <div className="card m-2">
+                    <div className="card-body profile-card pt-4 d-flex flex-column align-items-center">
+                      <h3 className="app__work_item_title">
+                        <strong>
+                          <u>{items.name}</u>
+                        </strong>
+                      </h3>
 
-                <div className="card-body profile-card pt-4 d-flex flex-column align-items-center">
-                  {" "}
-                  <img
-                    src={items.imagePath}
-                    alt="Profile"
-                    className="border-2"
-                    // className="rounded-circle"
-                  />
-                  <br></br>
-                  <p className="app__work_description">{items.description}</p>
-                  <p className="app__work_platform_p">
-                    Platform : <strong>{items.platform}</strong>
-                  </p>
-                  <p className="app__work_platform_p">
-                    Technology : <strong>{items.technology}</strong>
-                  </p>
-                  <div className="social-links mt-2">
-                    {" "}
-                    <a href="#" className="twitter">
-                      <i className="bi bi-twitter"></i>
-                    </a>{" "}
-                    <a href="#" className="facebook">
-                      <i className="bi bi-facebook"></i>
-                    </a>{" "}
-                    <a href="#" className="instagram">
-                      <i className="bi bi-instagram"></i>
-                    </a>{" "}
-                    <a href="#" className="linkedin">
-                      <i className="bi bi-linkedin"></i>
-                    </a>
+                      <div className="card-body profile-card pt-4 d-flex flex-column align-items-center">
+                        {" "}
+                        <img
+                          src={items.imagePath}
+                          alt="Profile"
+                          className="border-2"
+                          // className="rounded-circle"
+                        />
+                        <br></br>
+                        <p className="app__work_description">
+                          {items.description}
+                        </p>
+                        <p className="app__work_platform_p">
+                          Platform : <strong>{items.platform}</strong>
+                        </p>
+                        <p className="app__work_platform_p">
+                          Technology : <strong>{items.technology}</strong>
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
           ))}
         </div>
