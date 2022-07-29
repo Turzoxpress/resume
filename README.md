@@ -1,4 +1,4 @@
-# React Resume - Responsive and customizable CV / Resume
+# Modern React Resume
 
 You can easily create your fully beautiful CV / Resume by passing necessary props. <br/>
 Just clone or fork the repository and edit [data.js](https://github.com/Maaato/react-resume/blob/master/src/Schemas/Data.js) inside schemas folder and build your own CV.
@@ -6,7 +6,9 @@ Just clone or fork the repository and edit [data.js](https://github.com/Maaato/r
 - Light / Dark mode 🌗
 - Snowflakes mode ❄️
 
-[Preview](https://react-resume-rho.vercel.app)
+[Preview](https://turzoxpress.github.io/resume/)
+
+Thanks to [Maaato](https://github.com/Maaato)
 
 ## Getting Started 👋
 ### Built With 🛠️
