@@ -17,6 +17,8 @@ import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import domtoimage from "dom-to-image";
 
+import { DownloadButton } from "../Components/DownloadButton";
+
 export const Resume = () => {
   const query = "(min-width: 968px)";
   const [matches, setMatches] = useState(window.matchMedia(query).matches);
@@ -30,7 +32,7 @@ export const Resume = () => {
 
   const { profile, aboutMe, skills, socialMedia, experience } = dataSchema;
 
-  const printDocument = () => {
+  const downloadResume = () => {
     // const input = document.getElementById('root');
     // html2canvas(input, {
     //   quality: 2,
@@ -47,7 +49,7 @@ export const Resume = () => {
     //---------------
     var node = document.getElementById("area-cv");
     var options = {
-      quality: 2,
+      quality: 1,
     };
 
     domtoimage
@@ -60,7 +62,7 @@ export const Resume = () => {
         const fileURL = URL.createObjectURL(file);
         const link = document.createElement("a");
         link.href = fileURL;
-        link.download = Data.profile.name;
+        link.download = Data.profile.name + ".pdf";
         link.click();
 
         //---------------------------
@@ -81,9 +83,6 @@ export const Resume = () => {
 
   return (
     <>
-      <div>
-        <button onClick={printDocument}>Save PDF</button>
-      </div>
       <SEO {...profile} {...aboutMe} />
       {!matches && <Menu {...menuSchema} />}
       <main className="l-main bd-container" id="bd-container">
@@ -101,6 +100,10 @@ export const Resume = () => {
           </div>
         </div>
       </main>
+
+      <div className="custom_button_div">
+        <DownloadButton downloadResume={downloadResume} />
+      </div>
     </>
   );
 };

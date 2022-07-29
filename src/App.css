@@ -456,6 +456,41 @@ body.dark-theme {
   }
 }
 
-.custom_cursor_pointer{
-  cursor:pointer
+.custom_cursor_pointer {
+  cursor: pointer;
+}
+
+.custom_button_div {
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.custom_button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.custom_button_button1 {
+  border-radius: 2px;
+}
+.custom_button_button2 {
+  border-radius: 4px;
+}
+.custom_button_button3 {
+  border-radius: 8px;
+}
+.custom_button_button4 {
+  border-radius: 12px;
+}
+.custom_button_button5 {
+  border-radius: 50%;
 }
