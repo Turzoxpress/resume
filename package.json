@@ -1,5 +1,6 @@
 {
-  "name": "react-resume",
+  "homepage": "https://turzoxpress.github.io/resume",
+  "name": "mahbubur-rahman-turzo-resume",
   "version": "1.2.4",
   "private": true,
   "dependencies": {
@@ -21,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
