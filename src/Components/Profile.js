@@ -1,6 +1,6 @@
 import React from "react";
 import { Options } from "./Options";
-import profile_image from "../assets/profile.jpeg"
+import profile_image from "../assets/resume_photo.jpg";
 
 export const Profile = ({
   name,
@@ -12,11 +12,10 @@ export const Profile = ({
   website,
   github,
   github_repo_link,
-  portfolio_direct_site
+  portfolio_direct_site,
 }) => {
-
   const openInNewTab = (url) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
+    window.open(url, "_blank", "noopener,noreferrer");
   };
   return (
     <section className="home" id="home">
@@ -39,12 +38,20 @@ export const Profile = ({
           <span className="home__information">
             <i className="bx bx-phone home__icon" /> {telephone}
           </span>
-          <a href={portfolio_direct_site} target="_blank" rel="noopener noreferrer"><span className="home__information">
-            <i className="bx bx-globe home__icon" /> {website}
-          </span></a>
-          <a href={github_repo_link} target="_blank" rel="noopener noreferrer"><span className="home__information">
-            <i className="bx bxl-github home__icon" /> {github}
-          </span></a>
+          <a
+            href={portfolio_direct_site}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="home__information">
+              <i className="bx bx-globe home__icon" /> {website}
+            </span>
+          </a>
+          <a href={github_repo_link} target="_blank" rel="noopener noreferrer">
+            <span className="home__information">
+              <i className="bx bxl-github home__icon" /> {github}
+            </span>
+          </a>
         </div>
       </div>
       <Options />

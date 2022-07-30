@@ -18,6 +18,7 @@ import html2canvas from "html2canvas";
 import domtoimage from "dom-to-image";
 
 import { DownloadButton } from "../Components/DownloadButton";
+import { DevOps } from "../Components/DevOps";
 
 export const Resume = () => {
   const query = "(min-width: 968px)";
@@ -96,6 +97,7 @@ export const Resume = () => {
           <div className="resume__right">
             <Works {...experience} />
             <Academic {...experience} />
+            <DevOps {...skills} />
             <Proyects {...experience} />
           </div>
         </div>

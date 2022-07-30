@@ -248,6 +248,7 @@ body.dark-theme {
   border-radius: 50%;
   justify-self: center;
   margin-bottom: var(--mb-1);
+  border: solid white 4px;
 }
 
 .home__title {

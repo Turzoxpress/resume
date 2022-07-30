@@ -8,9 +8,8 @@ export const Data = {
     image: "https://avatars.githubusercontent.com/u/5907099?v=4",
     website: "turzo.org",
     github: "Turzoxpress",
-    portfolio_direct_site : "https://turzoxpress.github.io/portfolio/",
+    portfolio_direct_site: "https://turzoxpress.github.io/portfolio/",
     github_repo_link: "https://github.com/Turzoxpress?tab=repositories",
-
   },
   aboutMe: {
     label: "Profile",
@@ -22,11 +21,7 @@ export const Data = {
     softLabel: "Skills",
     backend: {
       title: "Backend",
-      data: [
-        "NodeJS - Express",
-        "Python - Django",
-        "Python - Flask"
-      ]
+      data: ["NodeJS - Express", "Python - Django", "Python - Flask"],
     },
     frontend: {
       title: "Frontend",
@@ -36,21 +31,25 @@ export const Data = {
         "Android - Java(Android Studio)",
         "iOS - Swift & SwiftUI(XCode)",
         "Game Development - Unity3D",
-        "Robotics"
-      ]
+        "Robotics",
+      ],
     },
     language: {
       title: "Language",
+      data: ["Python", "Javascript", "C#", "Swift", "C", "C++", "PHP"],
+    },
+    devOps: {
+      title: "DevOps",
       data: [
-        "Python",
-        "Javascript",
-        "C#",
-        "Swift",
-        "C",
-        "C++",
-        "PHP"
-        
-      ]
+        "Amazon Cloud",
+        "Google Cloud",
+        "Docker",
+        "Ubuntu Server",
+        "Apache",
+        "Load Balancing",
+        "Apache Proxy",
+        "HA Proxy",
+      ],
     },
     technicalSkills: [
       "Angular",
@@ -99,21 +98,20 @@ export const Data = {
     ],
   },
   experience: {
-    start_time : "2017-07-01T00:00:00.738Z",
+    start_time: "2017-07-01T00:00:00.738Z",
     works: [
       {
         title: "Full Stack Software Engineer (Team Lead)",
         period: "July 2021 - *",
         company: "Babylon Resources Limited",
         description: [
-          "Develope REST API based backend microservices with NodeJS, MongoDB, MySQL",
-          "Develop industriy level frontend solutions with React, React Native, Android, iOS.",
+          "Develop REST API based backend microservices with NodeJS-Express,Python-Django, MongoDB, MySQL",
+          "Develop industry level frontend solutions with React, React Native, Android, iOS.",
           "Maintain Google cloud or Amazon cloud server with Docker.",
           "Configure microservice and frontend with Apache Reverse Proxy or HA Proxy.",
           "Develop Android and iOS with React Native cross-platform framework.",
           "Develop Android and iOS with native language and IDE ie. Java-Android Studio, Swift-SwiftUI-XCode",
-          "Maintain team members, review their projects and source codes, mentor them, guide them."
-
+          "Maintain team members, review their projects and source codes, mentor them, guide them.",
         ],
       },
       {
@@ -121,26 +119,19 @@ export const Data = {
         period: "March 2019 - June 2021",
         company: "Babylon Resources Limited",
         description: [
-          "Develope REST API based backend microservices with NodeJS, MongoDB, MySQL",
-          "Develop industriy level frontend solutions with React, React Native, Android, iOS.",
+          "Develop REST API based backend microservices with NodeJS-Express,Python-Django, MongoDB, MySQL",
+          "Develop industry level frontend solutions with React, React Native, Android, iOS.",
           "Maintain Google cloud or Amazon cloud server with Docker.",
           "Configure microservice and frontend with Apache Reverse Proxy or HA Proxy.",
           "Develop Android and iOS with React Native cross-platform framework.",
           "Develop Android and iOS with native language and IDE ie. Java-Android Studio, Swift-SwiftUI-XCode",
-          
-
         ],
       },
       {
         title: "Software Engineer",
         period: "July 2017 - Feb. 2019",
         company: "Babylon Resources Limited",
-        description: [
-          "*",
-         
-          
-
-        ],
+        description: ["*"],
       },
     ],
     academic: [
