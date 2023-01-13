@@ -14,17 +14,17 @@ export const Proyects = ({ proyects }) => {
           <h4 className="experience__title">
             Please visit my website for all projects.
           </h4>
-          <a
-            href={Data.profile.portfolio_direct_site}
+          {/* <a
+            href={"https://turzoxpress.github.io/portfolio/"}
             target="_blank"
             rel="noopener noreferrer"
           >
             <span className="home__information">
-              <i className="bx bx-globe home__icon" /> {Data.profile.website}
+              <i className="bx bx-globe home__icon" /> {"turzoxpress.github.io/portfolio/"}
             </span>
           </a>
 
-          <br></br>
+          <br></br> */}
 
           <a
             href={Data.profile.portfolio_direct_site}
