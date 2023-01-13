@@ -39,12 +39,12 @@ export const Profile = ({
             <i className="bx bx-phone home__icon" /> {telephone}
           </span>
           <a
-            href={portfolio_direct_site}
+            href="https://turzoxpress.github.io/portfolio/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <span className="home__information">
-              <i className="bx bx-globe home__icon" /> {website}
+              <i className="bx bx-globe home__icon" /> {"turzoxpress.github.io/portfolio"}
             </span>
           </a>
           <a href={github_repo_link} target="_blank" rel="noopener noreferrer">
