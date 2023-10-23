@@ -1,0 +1,57 @@
+{
+  "homepage": "https://turzoxpress.github.io/resume",
+  "name": "mahbubur-rahman-turzo-resume",
+  "version": "1.2.4",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.1",
+    "bootstrap": "^5.2.0",
+    "dom-to-image": "^2.6.0",
+    "gh-pages": "^4.0.0",
+    "html2canvas": "^1.4.1",
+    "html2pdf": "^0.0.11",
+    "jspdf": "^2.5.1",
+    "moment": "^2.29.4",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-html2pdf": "^1.0.1",
+    "react-particles-js": "^3.4.1",
+    "react-pdf-html": "^1.1.18",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.2",
+    "react-to-pdf": "^1.0.1",
+    "tsparticles": "^1.31.1",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
