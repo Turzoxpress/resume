@@ -20,6 +20,7 @@ import domtoimage from "dom-to-image";
 
 import { DownloadButton } from "../Components/DownloadButton";
 import { DevOps } from "../Components/DevOps";
+import Acheivement from "../Components/Acheivement";
 
 export const Resume = () => {
   const query = "(min-width: 968px)";
@@ -565,14 +566,22 @@ body.dark-theme {
             <AboutMe {...aboutMe} />
             <Skills {...skills} />
             {/* <ContactInfo /> */}
+            <DevOps {...skills} />
+            <Academic {...experience} />
             <SocialMedia {...socialMedia} />
           </div>
           <div className="resume__right">
             <Works {...experience} />
-            <Academic {...experience} />
-            <DevOps {...skills} />
-            <Proyects {...experience} />
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+
+            {/* <Proyects {...experience} /> */}
           </div>
+          {/* <div>
+            <Acheivement />
+          </div> */}
         </div>
       </main>
 

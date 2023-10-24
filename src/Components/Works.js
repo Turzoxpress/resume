@@ -43,7 +43,7 @@ export const Works = ({ works, start_time }) => {
   );
 };
 
-const Work = ({ title, period, company, description }) => {
+const Work = ({ title, period, company, description, url }) => {
   return (
     <div className="experience__content">
       <div className="experience__time">
@@ -51,7 +51,10 @@ const Work = ({ title, period, company, description }) => {
         <span className="experience__line"></span>
       </div>
       <div className="experience__data bd-grid">
-        <h3 className="experience__title" style={{ color: "blue" }}>
+        <h3
+          className="experience__title"
+          style={{ color: "black", fontWeight: "bold" }}
+        >
           {title}
         </h3>
 
@@ -59,7 +62,7 @@ const Work = ({ title, period, company, description }) => {
           {period} | {company}
         </span>
         {description.map((desc, i) => (
-          <Description key={i} desc={desc} />
+          <Description key={i} sl={i} desc={desc} url={url} />
         ))}
       </div>
     </div>
