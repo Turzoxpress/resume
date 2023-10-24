@@ -5,7 +5,9 @@ export const SEO = () => {
   return (
     <Helmet>
       {/* Title */}
-      <title>Mahbubur Rahman Turzo - Full Stack Developer</title>
+      <title>
+        Mahbubur Rahman Turzo - Senior Software Engineer Full Stack{" "}
+      </title>
 
       {/* Meta Tags */}
       <meta
