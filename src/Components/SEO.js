@@ -5,14 +5,12 @@ export const SEO = () => {
   return (
     <Helmet>
       {/* Title */}
-      <title>
-        Mahbubur Rahman Turzo - Senior Software Engineer Full Stack{" "}
-      </title>
+      <title>Mahbubur Rahman Turzo - Senior Software Engineer Full Stack</title>
 
       {/* Meta Tags */}
       <meta
         name="description"
-        content="Mahbubur Rahman Turzo - Full Stack Developer"
+        content="Mahbubur Rahman Turzo - Senior Software Engineer Full Stack"
       />
       <meta
         name="keywords"
@@ -23,7 +21,7 @@ export const SEO = () => {
       {/* OpenGraph tags */}
       <meta
         property="og:title"
-        content="Mahbubur Rahman Turzo - Full Stack Developer"
+        content="Mahbubur Rahman Turzo - Senior Software Engineer Full Stack"
       />
       <meta
         property="og:description"
@@ -42,7 +40,7 @@ export const SEO = () => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:title"
-        content="Mahbubur Rahman Turzo - Full Stack Developer"
+        content="Mahbubur Rahman Turzo - Senior Software Engineer Full Stack"
       />
       <meta
         name="twitter:description"
