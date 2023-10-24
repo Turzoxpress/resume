@@ -12,7 +12,7 @@ const RichTextComponent = () => {
         const response = await fetch("../Schemas/acheivement.txt");
 
         if (!response.ok) {
-          throw new Error("Failed to fetch rich text content");
+          throw new Error("Failed to fetch rich text contentt");
         }
 
         const textContent = await response.text();
