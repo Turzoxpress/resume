@@ -2,9 +2,9 @@ export const Data = {
   profile: {
     name: "Mahbubur Rahman",
     ocupation: "Senior Software Engineer & Team Lead (Full Stack)",
-    location: "Dhaka, Bangladesh",
+    location: "London, United Kingdom",
     email: "turzoxpress@gmail.com",
-    telephone: "+880 1834261758",
+    telephone: "+44 7982 377999",
     image: "https://avatars.githubusercontent.com/u/5907099?v=4",
     website: "turzo.org",
     github: "Turzoxpress",
@@ -178,20 +178,22 @@ export const Data = {
     ],
     academic: [
       {
-        career: "Bachelor of Science(BSc) in Computer Science & Engineering",
-        date: "2017",
-        institution: "Ahsanullah University of Science and Technology",
-      },
-      {
         career: "Higher Secondary Certificate (GCE A Level equivalent)",
         date: "2012",
         institution: "Dhaka City College",
       },
       {
-        career: "Secondary School Certificate (GCE O Level equivalent)",
-        date: "2010",
-        institution: "Sonapur Ali Akbar High School",
+        career: "Bachelor of Science(BSc) in Computer Science & Engineering",
+        date: "2017",
+        institution: "Ahsanullah University of Science and Technology",
       },
+      
+      {
+        "career": "Master's in Software Engineering",
+        "date": "2025 - 2026", 
+        "institution": "University of Hertfordshire, UK"
+      },
+      
     ],
     proyects: [
       {
